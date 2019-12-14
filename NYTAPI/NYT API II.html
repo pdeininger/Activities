@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>New York Times Search</title>
+    <!--JQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--Custom JavaScript-->
+    <script src="assets/javascript/script.js"></script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+          <h1>New York Times Search</h1>
+        </div>
+      </div>
+    </header>
+    <section>
+      <!--Search Parameters Container-->
+      <div class="container parameters">
+        <div class="row col-heading">
+          <div class="col">
+            <h3>Search Parameters</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <form id="search-form">
+              <p>Search Term:</p>
+              <input
+                type="text"
+                name="search-term"
+                id="search-term"
+              /><br /><br />
+              <p>Number of Records to Retrieve:</p>
+              <select id="number-records">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option> </select
+              ><br /><br />
+              <p>Start Year (Optional):</p>
+              <input
+                type="text"
+                name="start-year"
+                id="start-year"
+              /><br /><br />
+              <p>End Year (Optional):</p>
+              <input type="text" name="end-year" id="end-year" /><br /><br />
+              <button id="searchBtn">Search</button
+              ><button id="clearBtn">Clear</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container articles">
+        <div class="row col-heading">
+          <div class="col">
+            <h3>Top Articles</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="articlesGoHere"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <p>Made with lots and lots of back pain.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

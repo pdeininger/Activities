@@ -1,0 +1,36 @@
+.jumbotron {
+    background-color: rgb(21, 21, 95);
+  }
+  h1 {
+    color: white;
+    font-weight: bolder;
+  }
+  .parameters,
+  .articles {
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+  }
+  input,
+  select {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 4px 10px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  .col-heading {
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+  }
+  .row {
+    padding: 20px;
+  }
+  #articlesGoHere div {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0 20px 0;
+  }
+  #articlesGoHere div:last-child {
+    border-bottom: none;
+  }
