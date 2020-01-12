@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Dashboard</title>
+    <!--bootstrap CDN-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--jquery CDN-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <!--moment.js-->
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <!--custom css-->
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid text-center">
+          <!--Page Title-->
+          <h1>Weather Dashboard</h1>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <!--Search Menu-->
+            <h3>Search for a City</h3>
+            <input type="text" name="city" id="Search-input" />
+            <button id="search-button">Go</button>
+            <div id="search-history-div"></div>
+          </div>
+          <div class="col-md-8">
+            <div class="row grey-border">
+              <!--current weather-->
+              <div class="col"><div id="current-weather-div"></div></div>
+            </div>
+            <!--five day forecast-->
+            <div class="row">
+              <div class="col"><div id="five-day-forecast-div"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Javascript Links-->
+    <script src="assets/javascript/search.js"></script>
+    <script src="assets/javascript/current-weather.js"></script>
+  </body>
+</html>

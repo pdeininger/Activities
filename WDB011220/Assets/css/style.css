@@ -1,0 +1,9 @@
+.grey-border {
+  border: 1px solid grey;
+}
+.search-history-button {
+  width: 100%;
+}
+.display-inline {
+  display: inline;
+}
